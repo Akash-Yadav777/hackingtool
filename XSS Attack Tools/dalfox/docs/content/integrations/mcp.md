@@ -1,0 +1,217 @@
++++
+title = "MCP Server"
+description = "Expose Dalfox to Claude and other MCP clients as a set of scanner tools."
+weight = 2
+toc = true
++++
+
+The **Model Context Protocol** (MCP) is an open standard for letting AI clients talk to external tools. `dalfox mcp` runs a stdio-based MCP server so Claude Desktop, Claude Code, Cursor, and any other MCP-compatible client can drive Dalfox scans directly.
+
+## Starting the server
+
+```bash
+dalfox mcp
+```
+
+The server speaks MCP over `stdin`/`stdout`. Launch it from the client; you don't run it manually in a terminal.
+
+## Claude Desktop config
+
+Add Dalfox to your Claude Desktop MCP config (`claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "dalfox": {
+      "command": "dalfox",
+      "args": ["mcp"]
+    }
+  }
+}
+```
+
+Restart Claude Desktop. Dalfox appears as a tool-provider named `dalfox`.
+
+## Claude Code (and other CLIs)
+
+```bash
+claude mcp add dalfox -- dalfox mcp
+```
+
+## Available tools
+
+Six tools are exposed. All are async and non-blocking: submit a scan, poll for results, then move on.
+
+### `scan_with_dalfox`
+
+Submit a scan. Returns immediately.
+
+```json
+{
+  "target": "https://example.com/search?q=test",
+  "method": "GET",
+  "param": ["q"],
+  "headers": ["Authorization: Bearer token"],
+  "encoders": ["url", "html"],
+  "timeout": 10,
+  "scan_timeout": 0,
+  "workers": 50,
+  "rate_limit": 0,
+  "insecure": true,
+  "blind_callback_url": "https://callback.example",
+  "deep_scan": false,
+  "skip_ast_analysis": false,
+  "analyze_external_js": false,
+  "detect_outdated_libs": false
+}
+```
+
+`insecure` controls TLS certificate validation (default `true`, scanner-friendly):
+set it `false` to enforce certificate validation and reject self-signed or
+expired certs. Mirrors the `--insecure` CLI flag.
+
+`analyze_external_js` is opt-in (default `false`): set it `true` to fetch
+same-origin `<script src>` bundles at preflight time and run AST DOM-XSS
+analysis on them. Useful for SPAs where all sink logic lives in external
+bundles and the page has no server-side reflection. Caps: 16 files,
+512 KiB per file; honours `include_url`/`exclude_url` filters.
+
+`detect_outdated_libs` is opt-in (default `false`): set it `true` to also emit
+informational `[I]` findings for outdated / known-vulnerable JS libraries
+(CWE-1104, 0 extra requests). Left off, the scan reports only XSS.
+
+`rate_limit` caps the scan's outbound requests/second (`0` = unlimited, the
+default), now enforced across all worker tasks — use it to be gentle on a
+fragile target or to stay under a WAF threshold.
+
+`scan_timeout` is the whole-scan wall-clock budget in seconds (default `0` =
+unbounded), distinct from the per-request `timeout`. When it trips, the scan
+stops, keeps any partial findings, and settles as `cancelled` with an
+`error_message` mentioning `scan_timeout`. Set it to bound long or `deep_scan`
+runs so an agent's poll loop is guaranteed to terminate.
+
+Response:
+
+```json
+{ "scan_id": "9f2c…", "target": "https://example.com/search?q=test", "status": "queued" }
+```
+
+### `get_results_dalfox`
+
+Poll a scan. Returns status, progress, and results when ready.
+
+```json
+{ "scan_id": "9f2c…" }
+```
+
+Response (in progress):
+
+```json
+{
+  "scan_id": "9f2c…",
+  "target": "…",
+  "status": "running",
+  "progress": {
+    "params_total": 10,
+    "params_tested": 4,
+    "requests_sent": 215,
+    "findings_so_far": 1,
+    "estimated_completion_pct": 40,
+    "suggested_poll_interval_ms": 3000
+  }
+}
+```
+
+Response (done):
+
+```json
+{
+  "scan_id": "9f2c…",
+  "status": "done",
+  "results": [
+    {
+      "type": "V",
+      "type_description": "Verified",
+      "inject_type": "inHTML",
+      "method": "GET",
+      "param": "q",
+      "payload": "<svg/onload=alert(1)>",
+      "evidence": "payload reflected and DOM element verified",
+      "cwe": "CWE-79",
+      "severity": "High"
+    }
+  ]
+}
+```
+
+`progress.estimated_completion_pct` and `params_tested` advance live as each
+discovered parameter finishes (they no longer sit at 0 until the scan ends), so
+they are usable for pacing polls — honor `suggested_poll_interval_ms`.
+
+If the target can't be reached (DNS failure, connection refused, TLS error,
+timeout) the scan ends as `status: "error"` with `error_message` containing
+`CONNECTION_FAILED`, rather than `done` with an empty `results` — the same
+distinction `preflight_dalfox` reports via `reachable: false`. The `target`
+must start with `http://` or `https://`.
+
+### `list_scans_dalfox`
+
+List every tracked scan. Optional filter:
+
+```json
+{ "status": "running" }
+```
+
+Returns `total`, `scans: [{scan_id, target, status, result_count}]`.
+
+### `cancel_scan_dalfox`
+
+Abort a queued or running scan:
+
+```json
+{ "scan_id": "9f2c…" }
+```
+
+### `delete_scan_dalfox`
+
+Permanently remove a tracked scan from memory. Only terminal scans (`done`, `error`, `cancelled`) can be deleted; running or queued scans must be cancelled first. Terminal scans are also auto-purged after 1 hour.
+
+```json
+{ "scan_id": "9f2c…" }
+```
+
+Returns `{scan_id, deleted: true, previous_status}`.
+
+### `preflight_dalfox`
+
+Analyse a target **without** sending payloads. Useful for scoping before committing to a scan.
+
+```json
+{
+  "target": "https://example.com",
+  "method": "GET",
+  "skip_discovery": false,
+  "skip_mining": false
+}
+```
+
+Returns reachability, discovered parameters, and an estimated request count.
+
+## Typical agent flow
+
+1. Agent calls `preflight_dalfox` to confirm the target and count parameters.
+2. Agent calls `scan_with_dalfox`, receives a `scan_id`.
+3. Agent polls `get_results_dalfox` using `suggested_poll_interval_ms` from the progress object.
+4. Once `status == "done"`, the agent summarises findings and reports back to the user.
+
+Because every tool is async, the agent stays responsive; no long-running tool call blocks the conversation.
+
+## Authorization & safety
+
+The MCP server enforces the same rules as the CLI: **only scan targets you're authorised to test.** Consider gating Dalfox MCP calls behind an explicit user confirmation step in your agent's system prompt, such as "Confirm the scope before every scan."
+
+## Troubleshooting
+
+- **Tool not showing up?** Make sure the `dalfox` binary is on the PATH the MCP client uses. For Claude Desktop on macOS, that's often just `/usr/local/bin` or `/opt/homebrew/bin`.
+- **Empty results?** Poll again; scans are async. Use `suggested_poll_interval_ms` as your cadence.
+- **Want logs?** Run `dalfox mcp --debug` while you're setting things up. The debug lines go to stderr so they don't pollute the MCP channel.

@@ -1,0 +1,16 @@
+*.exe
+*.tmp
+*.trs
+*out*/
+be_tests
+domexusers.raw*
+out*/
+rebuild
+stand
+test_be
+test_bulkextractor
+x.cpp
+domexusers.raw*
+be_graph.pdf
+*.Tpo
+Makefile.auto_defs

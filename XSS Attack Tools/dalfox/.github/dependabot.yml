@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: cargo
+    directory: "/"
+    schedule:
+      interval: weekly
+    target-branch: "main"
+    ignore:
+      # rand is intentionally pinned at 0.8 because rsa 0.9 (for interactsh OOB)
+      # binds rand_core 0.6. aes/ctr are now on modern lines (0.9/0.10) after
+      # migrating the CTR construction to the current cipher::KeyIvInit API.
+      - dependency-name: "rand"

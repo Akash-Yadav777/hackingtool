@@ -1,0 +1,27 @@
+{
+  "projectName": "crivo",
+  "projectOwner": "GMDSantana",
+  "files": [
+    "README.md",
+    "translations/es/README.md",
+    "translations/pt-br/README.md",
+    "translations/zh-cn/README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "GMDSantana",
+      "name": "GMDSantana",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6341823?v=4",
+      "profile": "https://gmdsantana.com/",
+      "contributions": [
+        "code",
+        "design",
+        "doc",
+        "test"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ee2e581-45d7-4c90-b6a1-e92e4b5829dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XSpear.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/XSpear.gemspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/XSpear/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/XSpear/version.rb" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/XSpear@XSpear.rcov" NAME="XSpear Coverage Results" MODIFIED="1562943092281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="XSpear" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/raw_sample.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/XSpear/XSpearRepoter.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5415">
+              <caret line="361" column="39" selection-start-line="361" selection-start-column="39" selection-end-line="361" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/XSpear.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="567" selection-start-line="567" selection-end-line="567" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/XSpear_spec.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/report.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="124" selection-start-column="124" selection-end-column="124" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom_payload.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/XSpear/version.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forBurp/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="105">
+                <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forBurp/otwa.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XSpear.gemspec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="547">
+              <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>BLINDNOTDETECTED</find>
+      <find>@reflected_params</find>
+      <find>@thread</find>
+      <find>thread</find>
+      <find>STATIC</find>
+      <find>@progress</find>
+      <find>@progre</find>
+      <find>@verbose</find>
+      <find>puts</find>
+      <find>not fil</find>
+      <find>EH</find>
+      <find>CSP</find>
+      <find>URI::encode</find>
+      <find>@all</find>
+      <find>for reflected</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lib/XSpear/banner.rb" />
+        <option value="$PROJECT_DIR$/config.json" />
+        <option value="$PROJECT_DIR$/lib/XSpear/log.rb" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/forBurp/otwa.sh" />
+        <option value="$PROJECT_DIR$/forBurp/README.md" />
+        <option value="$PROJECT_DIR$/raw_sample.txt" />
+        <option value="$PROJECT_DIR$/exe/XSpear" />
+        <option value="$PROJECT_DIR$/custom_payload.json" />
+        <option value="$PROJECT_DIR$/lib/XSpear/XSpearRepoter.rb" />
+        <option value="$PROJECT_DIR$/report.html" />
+        <option value="$PROJECT_DIR$/lib/XSpear.rb" />
+        <option value="$PROJECT_DIR$/XSpear.gemspec" />
+        <option value="$PROJECT_DIR$/lib/XSpear/version.rb" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="XSpear" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XSpear" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XSpear" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XSpear" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XSpear" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XSpear" type="462c0819:PsiDirectoryNode" />
+              <item name="exe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XSpear" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XSpear" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XSpear" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XSpear" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="XSpear" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XSpear" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XSpear" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="XSpear" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="XSpear" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/lib" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/lib/XSpear.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Ruby.XSpear" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ee2e581-45d7-4c90-b6a1-e92e4b5829dd" name="Default Changelist" comment="" />
+      <created>1562942814778</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562942814778</updated>
+      <workItem from="1562942816004" duration="15337000" />
+      <workItem from="1563638656518" duration="4985000" />
+      <workItem from="1563809961097" duration="4237000" />
+      <workItem from="1563893538891" duration="11917000" />
+      <workItem from="1564151699165" duration="2494000" />
+      <workItem from="1564413097342" duration="11274000" />
+      <workItem from="1574090247432" duration="1799000" />
+      <workItem from="1577115206395" duration="21990000" />
+      <workItem from="1580314696983" duration="286000" />
+      <workItem from="1580583824837" duration="1470000" />
+      <workItem from="1581089876742" duration="615000" />
+      <workItem from="1581425741728" duration="14190000" />
+      <workItem from="1581531430817" duration="297000" />
+      <workItem from="1582650651760" duration="758000" />
+      <workItem from="1583059002049" duration="49000" />
+    </task>
+    <task id="LOCAL-00040" summary="(1.0.8) Add event handler &amp; html5 XSS code, new pattern">
+      <created>1563990681736</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1563990681736</updated>
+    </task>
+    <task id="LOCAL-00041" summary="(1.0.8) Releases 1.0.8">
+      <created>1563990736550</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1563990736550</updated>
+    </task>
+    <task id="LOCAL-00042" summary="(1.0.9)[Fixed #11] Add check 'useful code'">
+      <created>1564062644030</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1564062644030</updated>
+    </task>
+    <task id="LOCAL-00043" summary="(1.0.9)[Fixed #12] Modify XSpear Struct(option.* =&gt; options [hash])">
+      <created>1564062846754</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1564062846754</updated>
+    </task>
+    <task id="LOCAL-00044" summary="(1.0.9)[Fixed #10] Add raw file read options">
+      <created>1564065374518</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1564065374518</updated>
+    </task>
+    <task id="LOCAL-00045" summary="(1.0.9)[Fixed #13] Remove add pattern from StandardError in 'makeQueryPattern'">
+      <created>1564065895283</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1564065895283</updated>
+    </task>
+    <task id="LOCAL-00046" summary="(1.0.9) Releases 1.0.9 / Add --raw options, code refactoring, fixed bugs">
+      <created>1564067249340</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1564067249340</updated>
+    </task>
+    <task id="LOCAL-00047" summary="(1.1.0) [Fixed #14] Edit raw query print code">
+      <created>1564151939307</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1564151939307</updated>
+    </task>
+    <task id="LOCAL-00048" summary="(1.1.0) [Fixed #15] makeQueryPattern 내 페이로드 생성 코드 수정">
+      <created>1564152655489</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1564152655489</updated>
+    </task>
+    <task id="LOCAL-00049" summary="(1.1.0) Releases 1.1.0 / Fixed bug, modify report format, etc..">
+      <created>1564154233169</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1564154233169</updated>
+    </task>
+    <task id="LOCAL-00050" summary="(1.1.1) Add WAF Found module frame..(TO_DO)">
+      <created>1564417827655</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1564417827656</updated>
+    </task>
+    <task id="LOCAL-00051" summary="(1.1.1) Add code level function &amp; Check WAF code frame">
+      <created>1564418071600</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1564418071600</updated>
+    </task>
+    <task id="LOCAL-00052" summary="(1.1.2) Releases &amp; Fixed #17 (Add some event handlers..)">
+      <created>1564582096828</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1564582096828</updated>
+    </task>
+    <task id="LOCAL-00053" summary="(1.1.3) Releases &amp; Fixed #18 (Add onload* event handler)">
+      <created>1564848490467</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1564848490467</updated>
+    </task>
+    <task id="LOCAL-00054" summary="(1.1.3) Releases &amp; Fixed #18 (Add onload* event handler)">
+      <created>1564848526961</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1564848526961</updated>
+    </task>
+    <task id="LOCAL-00055" summary="(1.1.4) [Fixed #20 #22] Modified JSON Format&amp;Remove Color in XSpearReporter">
+      <created>1565281795460</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1565281795460</updated>
+    </task>
+    <task id="LOCAL-00056" summary="(1.1.4) [Fixed #19] Add http.code, message log, edit log format on verbose=3">
+      <created>1565283137057</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1565283137057</updated>
+    </task>
+    <task id="LOCAL-00057" summary="(1.1.4) Released 1.1.4">
+      <created>1565283263992</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1565283263992</updated>
+    </task>
+    <task id="LOCAL-00058" summary="(1.1.5)(Fixed #21) not reflected params , no testing. but alway blind xss, other bug fix">
+      <created>1565795156071</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1565795156071</updated>
+    </task>
+    <task id="LOCAL-00059" summary="(1.1.5) Released 1.1.5">
+      <created>1565795193246</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1565795193247</updated>
+    </task>
+    <task id="LOCAL-00060" summary="(1.1.6) Add Event handler pattern (whatthe=&quot;&quot;onload)">
+      <created>1565965741653</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1565965741653</updated>
+    </task>
+    <task id="LOCAL-00061" summary="(1.1.6) (Fixed #24) Edit Usage">
+      <created>1565965829092</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1565965829093</updated>
+    </task>
+    <task id="LOCAL-00062" summary="(1.1.6) released 1.1.6 (+ fixed #23)">
+      <created>1565965941986</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1565965941986</updated>
+    </task>
+    <task id="LOCAL-00063" summary="(1.1.6) Add Event handler pattern (whatthe=&quot;&quot;onload)">
+      <created>1574091995789</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1574091995789</updated>
+    </task>
+    <task id="LOCAL-00064" summary="(1.2.1) Added ''-a(--test-all-params)' mode(#27) and bug fix(#34)">
+      <created>1577118226648</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1577118226649</updated>
+    </task>
+    <task id="LOCAL-00065" summary="(1.2.2) Remove Debug Code">
+      <created>1577118338926</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1577118338926</updated>
+    </task>
+    <task id="LOCAL-00066" summary="(1.2.3) Bug fix #35">
+      <created>1577118594609</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1577118594609</updated>
+    </task>
+    <task id="LOCAL-00067" summary="(1.3) fixed #38 (Added path scan)">
+      <created>1577596645830</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1577596645830</updated>
+    </task>
+    <task id="LOCAL-00068" summary="(1.3) fixed #39 (Added inJS scan)">
+      <created>1577597049653</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1577597049653</updated>
+    </task>
+    <task id="LOCAL-00069" summary="(1.3) fixed #37 (Added -c --config options)">
+      <created>1577612095200</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1577612095200</updated>
+    </task>
+    <task id="LOCAL-00070" summary="(1.3) fixed #40 (Reformating Logs / Verbose 0~4)">
+      <created>1577626433478</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1577626433478</updated>
+    </task>
+    <task id="LOCAL-00071" summary="(1.3) Released 1.3.0 +_+">
+      <created>1577628652705</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1577628652705</updated>
+    </task>
+    <task id="LOCAL-00072" summary="(1.3) Fixed dependency bug">
+      <created>1577629109580</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1577629109580</updated>
+    </task>
+    <task id="LOCAL-00073" summary="(1.3) Fixed dependency bug">
+      <created>1577629178860</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1577629178860</updated>
+    </task>
+    <task id="LOCAL-00074" summary="XSpear on Burpsuite">
+      <created>1577632578176</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1577632578176</updated>
+    </task>
+    <task id="LOCAL-00075" summary="(Fixed #45 , #47) ruby 2.7.0 troubleshooting(URI)">
+      <created>1580585220585</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1580585220586</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Released 1.3.2">
+      <created>1580585376006</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1580585376006</updated>
+    </task>
+    <task id="LOCAL-00077" summary="(Fixed #49) Add onpointerrawupdate event handler for xss">
+      <created>1581089940822</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1581089940823</updated>
+    </task>
+    <task id="LOCAL-00078" summary="(Fixed #50) Add SVG Animate XSS Payload">
+      <created>1581090128596</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1581090128596</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Release 1.3.3 (Added New XSS Payloads)">
+      <created>1581090457081</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1581090457081</updated>
+    </task>
+    <task id="LOCAL-00080" summary="(1.4 / Closed #51) Added only param analysis options">
+      <created>1581426071038</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1581426071038</updated>
+    </task>
+    <task id="LOCAL-00081" summary="(1.4 / Closed #51) Added only param analysis options">
+      <created>1581427060990</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1581427060990</updated>
+    </task>
+    <task id="LOCAL-00082" summary="(1.4 / Closed #41) Added custom payload option">
+      <created>1581428107580</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1581428107580</updated>
+    </task>
+    <task id="LOCAL-00083" summary="(1.4 / Closed #41) Added custom payload option">
+      <created>1581428482520</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1581428482520</updated>
+    </task>
+    <task id="LOCAL-00084" summary="(1.4 / Fixed #42) Bug fix --raw options, added --raw-ssl">
+      <created>1581430796984</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1581430796984</updated>
+    </task>
+    <task id="LOCAL-00085" summary="(1.4 / Closed #52) Added HTML Report">
+      <created>1581529060550</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1581529060550</updated>
+    </task>
+    <task id="LOCAL-00086" summary="(1.4 / Closed #53) 코드 반영하여 테스트한 결과 기존 로직이 훨씬 빨라서 변경하지 않을 예정">
+      <created>1581530432559</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1581530432559</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Released 1.4.0!">
+      <created>1581530932685</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1581530932685</updated>
+    </task>
+    <task id="LOCAL-00088" summary="(Closed #62) Add pattern">
+      <created>1582651251008</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1582651251008</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="91698000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14163615" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32953367" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32970297" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23636363" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32857144" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="(1.1.6) (Fixed #24) Edit Usage" />
+    <MESSAGE value="(1.1.6) released 1.1.6 (+ fixed #23)" />
+    <MESSAGE value="(1.1.6) Add Event handler pattern (whatthe=&quot;&quot;onload)" />
+    <MESSAGE value="(1.2.1) Added ''-a(--test-all-params)' mode(#27) and bug fix(#34)" />
+    <MESSAGE value="(1.2.2) Remove Debug Code" />
+    <MESSAGE value="(1.2.3) Bug fix #35" />
+    <MESSAGE value="(1.3) fixed #38 (Added path scan)" />
+    <MESSAGE value="(1.3) fixed #39 (Added inJS scan)" />
+    <MESSAGE value="(1.3) fixed #37 (Added -c --config options)" />
+    <MESSAGE value="(1.3) fixed #40 (Reformating Logs / Verbose 0~4)" />
+    <MESSAGE value="(1.3) Released 1.3.0 +_+" />
+    <MESSAGE value="(1.3) Fixed dependency bug" />
+    <MESSAGE value="XSpear on Burpsuite" />
+    <MESSAGE value="(Fixed #45 , #47) ruby 2.7.0 troubleshooting(URI)" />
+    <MESSAGE value="Released 1.3.2" />
+    <MESSAGE value="(Fixed #49) Add onpointerrawupdate event handler for xss" />
+    <MESSAGE value="(Fixed #50) Add SVG Animate XSS Payload" />
+    <MESSAGE value="Release 1.3.3 (Added New XSS Payloads)" />
+    <MESSAGE value="(1.4 / Closed #51) Added only param analysis options" />
+    <MESSAGE value="(1.4 / Closed #41) Added custom payload option" />
+    <MESSAGE value="(1.4 / Fixed #42) Bug fix --raw options, added --raw-ssl" />
+    <MESSAGE value="(1.4 / Closed #52) Added HTML Report" />
+    <MESSAGE value="(1.4 / Closed #53) 코드 반영하여 테스트한 결과 기존 로직이 훨씬 빨라서 변경하지 않을 예정" />
+    <MESSAGE value="Released 1.4.0!" />
+    <MESSAGE value="(Closed #62) Add pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="(Closed #62) Add pattern" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.6/gems/bundler-2.0.1/lib/bundler/rubygems_integration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/setup">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/XSpear/banner.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.4.6/lib/ruby/site_ruby/2.4.0/rubygems/core_ext/kernel_require.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/bin/rake">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs23/string.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="302" column="6" selection-start-line="302" selection-start-column="6" selection-end-line="302" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.6/gems/options-2.3.2/lib/options.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="6840">
+            <caret line="456" column="38" selection-start-line="456" selection-start-column="38" selection-end-line="456" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/console">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/XSpear/log.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exe/XSpear">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="82" selection-start-line="74" selection-start-column="82" selection-end-line="74" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raw_sample.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/XSpear/XSpearRepoter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5415">
+          <caret line="361" column="39" selection-start-line="361" selection-start-column="39" selection-end-line="361" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="124" selection-start-column="124" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_payload.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forBurp/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forBurp/otwa.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/XSpear.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="567" selection-start-line="567" selection-end-line="567" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/XSpear_spec.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSpear.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/XSpear/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

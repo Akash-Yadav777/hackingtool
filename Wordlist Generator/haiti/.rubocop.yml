@@ -1,0 +1,84 @@
+inherit_mode:
+  merge:
+    - Exclude
+AllCops:
+  TargetRubyVersion: 3.3
+  NewCops: enable
+  SuggestExtensions: false
+# ~~~ Layout ~~~
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+Layout/HashAlignment:
+  Include:
+    - 'lib/**/*.rb'
+Layout/LineLength:
+  Include:
+    - 'lib/**/*.rb'
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+# ~~~ Lint ~~~
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+Lint/DuplicateElsifCondition:
+  Enabled: true
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+Lint/RaiseException:
+  Enabled: true
+Lint/StructNewOverride :
+  Enabled: true
+# ~~~ Metrics ~~~
+Metrics/AbcSize:
+  Enabled: false
+Metrics/BlockNesting:
+  Exclude:
+    - 'bin/*'
+Metrics/ClassLength:
+  Max: 200
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 30
+Metrics/PerceivedComplexity:
+  Max: 10
+# ~~~ Naming ~~~
+Naming/InclusiveLanguage:
+  Enabled: false
+# ~~~ Style ~~~
+Style/AccessorGrouping:
+  Enabled: false # for yard
+Style/ArrayCoercion:
+  Enabled: true
+Style/BisectedAttrAccessor:
+  Enabled: false # for yard
+Style/CaseLikeIf:
+  Enabled: true
+Style/ExponentialNotation:
+  Enabled: true
+Style/HashAsLastArrayItem:
+  Enabled: true
+Style/HashEachMethods:
+  Enabled: true
+Style/HashLikeCase:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
+Style/RedundantAssignment:
+  Enabled: true
+Style/RedundantFetchBlock:
+  Enabled: true
+Style/RedundantFileExtensionInRequire:
+  Enabled: true
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+Style/RedundantRegexpEscape:
+  Enabled: true
+Style/RedundantReturn:
+  Enabled: false
+Style/SlicingWithRange:
+  Enabled: true
+# it's style!
+Gemspec/AddRuntimeDependency:
+  Enabled: false # https://github.com/rubocop/rubocop/pull/13030#discussion_r1674791776

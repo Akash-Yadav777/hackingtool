@@ -1,0 +1,14 @@
+{% include "header.html" %}
+  <div class="docs-layout">
+{% include "sidebar.html" %}
+    <main class="docs-main">
+      <article class="docs-article">
+        <h1>{{ page.title | e }}</h1>
+        {{ content }}
+        <h2 class="section-children-heading">In This Section</h2>
+        <ul class="section-list">
+          {{ section.list }}
+        </ul>
+        {{ pagination }}
+      </article>
+{% include "footer.html" %}

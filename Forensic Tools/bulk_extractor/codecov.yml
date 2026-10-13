@@ -1,0 +1,11 @@
+coverage:
+  range: 40..60
+  round: nearest
+  precision: 2
+
+
+ignore:
+  - "be20_api/catch.hpp"
+  - "be20_api/utf8.h"
+  - "be20_api/utf8/*"
+  - "rar/*"
